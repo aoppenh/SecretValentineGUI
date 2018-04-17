@@ -43,7 +43,6 @@ public class FileNameGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 boolean test = true;
-                System.out.println(Model.desktop.getPath());
                 Model.f = new File(Model.desktop.getPath());
                 Model.fileName = saveFileBox.getText();
                 Model.newFile = new File(Model.desktop, Model.fileName + ".txt");
