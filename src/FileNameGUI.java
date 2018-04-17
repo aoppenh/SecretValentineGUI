@@ -44,7 +44,8 @@ public class FileNameGUI extends JFrame {
                 boolean test = true;
                 Model.f = new File(Model.path);
                 Model.fileName = saveFileBox.getText();
-                Model.newFile = new File(Model.path + "\\" + Model.fileName + ".txt");
+                Model.newFile = new File(Model.desktop, Model.fileName + ".txt");
+//                Model.newFile = new File(Model.path + "\\" + Model.fileName + ".txt");
                 try {
                     File[] files = Model.f.listFiles();
                     for (File f : files) {

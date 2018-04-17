@@ -22,6 +22,7 @@ public class Model {
     static String list;
     static File f;
     static File newFile;
+    static File desktop = new File(System.getProperty("user.home") + "\\Desktop");
     static PrintWriter writer;
 
     public static void setPeopleAndAssignments() {
