@@ -7,6 +7,7 @@ import java.util.Random;
 
 /**
  * Created by Andyo on 12/25/2016.
+ * Version 4/17/2018
  */
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments = new Hashtable<>();
