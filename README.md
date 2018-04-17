@@ -1,2 +1,2 @@
-*A Secret Santa Program
+#A Secret Santa Program
 
