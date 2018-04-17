@@ -24,22 +24,26 @@ public class Model {
     static PrintWriter writer;
 
     public static void setPeopleAndAssignments() {
-        counterAssign = 0;
-        i = 0;
-        while (counterAssign < people.size()) {
-            int ran = r.nextInt(people.size() - 1);
-            for (Person p : people) {
-                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
-            }
-            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(ran).getSanta()) {
-                peopleAndAssignments.put(people.get(ran), people.get(i));
-                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
-                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
-                counterAssign++;
-            }
-            i++;
-        }
+
     }
+
+//    public static void setPeopleAndAssignments() {
+//        counterAssign = 0;
+//        i = 0;
+//        while (counterAssign < people.size()) {
+//            int ran = r.nextInt(people.size() - 1);
+//            for (Person p : people) {
+//                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
+//            }
+//            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(ran).getSanta()) {
+//                peopleAndAssignments.put(people.get(ran), people.get(i));
+//                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
+//                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+//                counterAssign++;
+//            }
+//            i++;
+//        }
+//    }
 
     public static void save() throws FileNotFoundException {
         writer = new PrintWriter(newFile);
