@@ -38,8 +38,8 @@ public class AddPeopleGUI extends JFrame {
         exitButton.setPreferredSize(new Dimension(140, 70));
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
-        imgLabel1.setIcon(new ImageIcon("C:\\Users\\Andyo\\SecretSantaGUI\\src\\santa-160903__340.png"));
-        imgLabel2.setIcon(new ImageIcon("C:\\Users\\Andyo\\SecretSantaGUI\\src\\santa-160903__340.png"));
+        imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
+        imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         addPersonBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
