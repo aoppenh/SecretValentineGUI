@@ -8,6 +8,7 @@ import java.io.IOException;
 
 /**
  * Created by Andyo on 12/26/2016.
+ * Version 4/17/2018
  */
 public class FileNameGUI extends JFrame {
     private JPanel formPanel;
@@ -42,7 +43,8 @@ public class FileNameGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 boolean test = true;
-                Model.f = new File(Model.path);
+                System.out.println(Model.desktop.getPath());
+                Model.f = new File(Model.desktop.getPath());
                 Model.fileName = saveFileBox.getText();
                 Model.newFile = new File(Model.desktop, Model.fileName + ".txt");
 //                Model.newFile = new File(Model.path + "\\" + Model.fileName + ".txt");
