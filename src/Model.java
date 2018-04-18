@@ -28,11 +28,12 @@ public class Model {
     static File desktop = new File(System.getProperty("user.home") + "\\Desktop");
     static PrintWriter writer;
     static Scanner reader;
-    static StringBuilder readBuilder = new StringBuilder();
+    static StringBuilder readBuilder;
     static String importDisplayString;
+    static String randomDisplayString;
 
     public static void setPeopleAndAssignments() {
-
+        
     }
 
 //    public static void setPeopleAndAssignments() {
@@ -60,9 +61,11 @@ public class Model {
     }
 
     public static void importFile() throws FileNotFoundException {
-        reader = new Scanner(new FileReader(importFileName));
+        reader = new Scanner(new FileReader(desktop + "\\" + importFileName));
+        importDisplayString = "";
+        readBuilder = new StringBuilder();
         while (reader.hasNext()) {
-            readBuilder.append(reader.next());
+            readBuilder.append(reader.nextLine() + "\n");
         }
         reader.close();
         importDisplayString = readBuilder.toString();

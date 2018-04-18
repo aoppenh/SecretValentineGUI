@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 
 /**
  * Created by Andyo on 4/17/2018.
@@ -43,9 +43,11 @@ public class ImportFileGUI extends JFrame {
                 Model.importFileName = importFileBox.getText() + ".txt";
                 try {
                     Model.importFile();
-                } catch (IOException e1) {
+                    new AddPeopleGUI("Secret Santa", Model.importDisplayString);
+                    dispose();
+                } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
-                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
+                    new ErrorGUI("Secret Santa Error", "File Not Found");
                 }
             }
         });

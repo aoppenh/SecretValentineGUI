@@ -55,7 +55,7 @@ public class MenuGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                new AddPeopleGUI("Secret Santa");
+                new AddPeopleGUI("Secret Santa", "");
             }
         });
     }

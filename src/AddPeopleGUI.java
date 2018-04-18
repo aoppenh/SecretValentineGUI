@@ -16,14 +16,13 @@ public class AddPeopleGUI extends JFrame {
     private JTextField addPersonBox;
     private JButton exitButton;
     private JButton randomizeButton;
-    private JButton removePersonButton;
     private JButton importFileButton;
     private JPanel middlePanel;
     private JLabel imgLabel2;
     private JLabel imgLabel1;
     private Container cPane;
 
-    public AddPeopleGUI(String title) {
+    public AddPeopleGUI(String title, String list) {
         Model.counter = 0;
         Model.counterAdded = 0;
         cPane = this.getContentPane();
@@ -35,8 +34,8 @@ public class AddPeopleGUI extends JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         cPane.add(formPanel);
         addPersonBox.setText("Enter Name ...");
-        bottomPanel.remove(removePersonButton);
-        removePersonButton.setPreferredSize(new Dimension(140, 70));
+        addedPeople.setEnabled(true);
+        addedPeople.setText(list);
         exitButton.setPreferredSize(new Dimension(140, 70));
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
@@ -53,12 +52,6 @@ public class AddPeopleGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
-            }
-        });
-        removePersonButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                addedPeople.setEnabled(true);
             }
         });
         addPersonButton.addActionListener(new ActionListener() {
@@ -97,6 +90,7 @@ public class AddPeopleGUI extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     new ImportFileGUI("Secret Santa");
+                    dispose();
                 } catch (Exception e1) {
                     e1.printStackTrace();
                     new ErrorGUI("Secret Santa Error", "An Error Occurred");
