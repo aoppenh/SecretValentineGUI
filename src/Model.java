@@ -27,7 +27,6 @@ public class Model {
     static Scanner reader;
     static StringBuilder readBuilder;
     static String importDisplayString;
-    static String randomDisplayString;
 
     public static void setPeopleAndAssignments() {
         counterAssign = 0;

@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Map;
 
 /**
  * Created by Andyo on 12/25/2016.
@@ -15,11 +16,16 @@ public class RandomizedGUI extends JFrame {
     private JPanel bottomPanel;
     private JLabel secretSantaLabel;
     private JTextArea santaAssignments;
+    private JTextArea santaAssigned;
     private JButton reDoButton;
     private JButton exitButton;
     private JLabel imgLabel1;
     private JLabel imgLabel2;
     private JButton saveButton;
+    private StringBuilder randomList1;
+    private StringBuilder randomList2;
+    private String randomDisplayString1;
+    private String randomDisplayString2;
 
     public RandomizedGUI(String title) {
         cPane = this.getContentPane();
@@ -35,9 +41,18 @@ public class RandomizedGUI extends JFrame {
         saveButton.setPreferredSize(new Dimension(140, 70));
         imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
-        for (Person p : Model.people) {
-            santaAssignments.setText(santaAssignments.getText() + p.getName() + "\n");
+        randomList1 = new StringBuilder();
+        randomList2 = new StringBuilder();
+        randomDisplayString1 = "";
+        randomDisplayString2 = "";
+        for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
+            String person = p.getKey().getName();
+            String assignment = p.getValue().getName();
+            randomList1.append(person);
+            randomList2.append(assignment);
         }
+        santaAssignments.setText(randomList1.toString());
+        santaAssigned.setText(randomList2.toString());
         Model.list = santaAssignments.getText();
         exitButton.addActionListener(new ActionListener() {
             @Override
