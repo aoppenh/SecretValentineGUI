@@ -53,7 +53,7 @@ public class FileNameGUI extends JFrame {
                         if (Model.fileName.equals(f.getName()) && !f.isDirectory()) {
                             test = false;
                             new ErrorGUI("Secret Santa Error", "File Already Exists");
-                            saveFileBox.setText("Enter File Name ...");
+                            saveFileBox.setText("Enter a File Name ...");
                             break;
                         }
                     }
@@ -64,8 +64,10 @@ public class FileNameGUI extends JFrame {
                     }
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
+                    new ErrorGUI("Secret Santa Error", "File Creation Error");
                 } catch (IOException e1) {
                     e1.printStackTrace();
+                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
                 }
             }
         });

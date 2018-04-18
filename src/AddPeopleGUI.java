@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andyo on 12/25/2016.
+ * Version 4/17/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -16,6 +17,7 @@ public class AddPeopleGUI extends JFrame {
     private JButton exitButton;
     private JButton randomizeButton;
     private JButton removePersonButton;
+    private JButton importFileButton;
     private JPanel middlePanel;
     private JLabel imgLabel2;
     private JLabel imgLabel1;
@@ -38,6 +40,7 @@ public class AddPeopleGUI extends JFrame {
         exitButton.setPreferredSize(new Dimension(140, 70));
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
+        importFileButton.setPreferredSize(new Dimension(140, 70));
         imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         addPersonBox.addActionListener(new ActionListener() {
@@ -89,9 +92,20 @@ public class AddPeopleGUI extends JFrame {
                 new RandomizedGUI("Secret Santa");
             }
         });
+        importFileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new ImportFileGUI("Secret Santa");
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
+                }
+            }
+        });
     }
 
-    public static void main(String[] args) {
-        new AddPeopleGUI("Secret Santa");
-    }
+//    public static void main(String[] args) {
+//        new AddPeopleGUI("Secret Santa");
+//    }
 }

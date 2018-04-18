@@ -58,6 +58,7 @@ public class RandomizedGUI extends JFrame {
                     new FileNameGUI("Secret Santa");
                 } catch (Exception e1) {
                     e1.printStackTrace();
+                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
                 }
             }
         });

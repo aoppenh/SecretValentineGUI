@@ -1,9 +1,11 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * Created by Andyo on 12/25/2016.
@@ -19,11 +21,15 @@ public class Model {
     static Random r = new Random();
     static String path = "C:\\Users\\Andyo\\Desktop";
     static String fileName;
+    static String importFileName;
     static String list;
     static File f;
     static File newFile;
     static File desktop = new File(System.getProperty("user.home") + "\\Desktop");
     static PrintWriter writer;
+    static Scanner reader;
+    static StringBuilder readBuilder = new StringBuilder();
+    static String importDisplayString;
 
     public static void setPeopleAndAssignments() {
 
@@ -51,5 +57,14 @@ public class Model {
         writer = new PrintWriter(newFile);
         writer.println(list);
         writer.close();
+    }
+
+    public static void importFile() throws FileNotFoundException {
+        reader = new Scanner(new FileReader(importFileName));
+        while (reader.hasNext()) {
+            readBuilder.append(reader.next());
+        }
+        reader.close();
+        importDisplayString = readBuilder.toString();
     }
 }

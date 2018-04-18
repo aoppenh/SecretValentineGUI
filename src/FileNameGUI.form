@@ -52,7 +52,7 @@
               <background color="-4449516"/>
               <font size="24" style="1"/>
               <foreground color="-12010705"/>
-              <text value="Enter File Name ..."/>
+              <text value="Enter a File Name ..."/>
             </properties>
           </component>
           <hspacer id="aca96">
