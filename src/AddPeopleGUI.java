@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andyo on 12/25/2016.
- * Version 4/17/2018
+ * Version 4/18/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;

@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 
 /**
  * Created by Andyo on 4/17/2018.
- * Version 4/17/2018
+ * Version 4/18/2018
  */
 public class ImportFileGUI extends JFrame {
     private JPanel formPanel;
