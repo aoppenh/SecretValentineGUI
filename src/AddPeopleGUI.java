@@ -21,6 +21,7 @@ public class AddPeopleGUI extends JFrame {
     private JLabel imgLabel2;
     private JLabel imgLabel1;
     private Container cPane;
+    private Color customColor = new Color(72,187,47);
 
     public AddPeopleGUI(String title, String list) {
         Model.counter = 0;
@@ -36,6 +37,7 @@ public class AddPeopleGUI extends JFrame {
         addPersonBox.setText("Enter Name ...");
         addedPeople.setEnabled(true);
         addedPeople.setText(list);
+        addedPeople.setDisabledTextColor(customColor);
         exitButton.setPreferredSize(new Dimension(140, 70));
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
@@ -71,6 +73,9 @@ public class AddPeopleGUI extends JFrame {
                     }
                     Model.counter++;
                     Model.counterAdded++;
+                    if (Model.counterAdded == 13) {
+                        addedPeople.setEnabled(false);
+                    }
                     addPersonBox.setText("Enter Name ...");
                 } else {
                     new ErrorGUI("Secret Santa Error", "Maximum Capacity Reached");
