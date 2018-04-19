@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * Created by Andyo on 12/25/2016.
- * Version 4/18/2018
+ * Created by Andrew Oppenheimer on 12/25/2016.
+ * Version 4/19/2018
  */
 public class RandomizedGUI extends JFrame {
     private Container cPane;

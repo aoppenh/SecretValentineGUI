@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * Created by Andyo on 12/26/2016.
+ * Created by Andrew Oppenheimer on 12/25/2016.
  * Version 4/17/2018
  */
 public class FileNameGUI extends JFrame {

@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by Andyo on 12/25/2016.
+ * Created by Andrew Oppenheimer on 12/25/2016.
  */
 public class SplashGUI extends JFrame {
     private JPanel formPanel;

@@ -1,5 +1,5 @@
 /**
- * Created by Andyo on 12/25/2016.
+ * Created by Andrew Oppenheimer on 12/25/2016.
  */
 public class Person {
     private String name;

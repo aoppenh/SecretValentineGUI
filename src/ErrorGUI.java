@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by Andyo on 12/25/2016.
+ * Created by Andrew Oppenheimer on 12/25/2016.
  */
 public class ErrorGUI extends JFrame {
     private JPanel formPanel;
