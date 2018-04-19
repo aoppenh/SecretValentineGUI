@@ -32,38 +32,32 @@ public class Model {
         peopleAndAssignments = new Hashtable<>();
         counterAssign = 0;
         i = 0;
-//        boolean check = true;
         long newTime;
         long startTime = System.currentTimeMillis();
-//        while (check) {
-            while (counterAssign < people.size()) {
-                int ran = r.nextInt(people.size());
+        while (counterAssign < people.size()) {
+            int ran = r.nextInt(people.size());
+//            for (Person p : people) {
+//                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
+//            }
+            newTime = System.currentTimeMillis() - startTime;
+            if (newTime > 1250) {
                 for (Person p : people) {
-                    System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
+                    p.set(p.getName(), false, false);
                 }
-                newTime = System.currentTimeMillis() - startTime;
-                if (newTime > 2000) {
-//                    check = true;
-                    for (Person p : people) {
-                        p.set(p.getName(), false, false);
-                    }
-                    i = 0;
-                    counterAssign = 0;
-                    peopleAndAssignments = new Hashtable<>();
-                    System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
-//                    break;
-                } else {
-//                    check = false;
-                }
-                if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
-                    peopleAndAssignments.put(people.get(ran), people.get(i));
-                    people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
-                    people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
-                    counterAssign++;
-                    i++;
-                }
+                i = 0;
+                counterAssign = 0;
+                peopleAndAssignments = new Hashtable<>();
+                startTime = System.currentTimeMillis();
+//                System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
             }
-//        }
+            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
+                peopleAndAssignments.put(people.get(ran), people.get(i));
+                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
+                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+                counterAssign++;
+                i++;
+            }
+        }
     }
 
     public static void save() throws FileNotFoundException {
