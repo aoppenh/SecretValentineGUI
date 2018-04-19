@@ -34,9 +34,9 @@ public class Model {
         i = 0;
         while (counterAssign < people.size()) {
             int ran = r.nextInt(people.size());
-            for (Person p : people) {
-                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
-            }
+//            for (Person p : people) {
+//                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
+//            }
             if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned()) {
                 peopleAndAssignments.put(people.get(ran), people.get(i));
                 people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());

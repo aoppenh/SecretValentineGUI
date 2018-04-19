@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.xml.datatype.Duration;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,6 +26,7 @@ public class RandomizedGUI extends JFrame {
     private JButton saveButton;
     private StringBuilder randomList1;
     private StringBuilder randomList2;
+    private StringBuilder listString;
     private String randomDisplayString1;
     private String randomDisplayString2;
 
@@ -46,17 +48,34 @@ public class RandomizedGUI extends JFrame {
         randomList2 = new StringBuilder();
         randomDisplayString1 = "";
         randomDisplayString2 = "";
-        for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
-            String person = p.getKey().getName();
-            String assignment = p.getValue().getName();
-            randomList1.append(person);
-            randomList1.append("\n");
-            randomList2.append(assignment);
-            randomList2.append("\n");
+        boolean check = true;
+        long startTime = System.currentTimeMillis();
+        while (check) {
+            int l = 0;
+            for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
+                long newTime = System.currentTimeMillis() - startTime;
+                if (newTime < 1500) {
+                    check = true;
+                    randomList1 = new StringBuilder();
+                    randomList2 = new StringBuilder();
+                    randomDisplayString1 = "";
+                    randomDisplayString2 = "";
+                    System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
+                    break;
+                } else {
+                    check = false;
+                }
+                String person = p.getKey().getName();
+                String assignment = p.getValue().getName();
+                randomList1.append(person);
+                randomList1.append("\n");
+                randomList2.append(assignment);
+                randomList2.append("\n");
+                l++;
+            }
         }
         santaAssignments.setText(randomList1.toString());
         santaAssigned.setText(randomList2.toString());
-        Model.list = santaAssignments.getText();
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -66,6 +85,12 @@ public class RandomizedGUI extends JFrame {
         reDoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                listString = new StringBuilder();
+                for (Person p : Model.people) {
+                    listString.append(p.getName());
+                    listString.append("\n");
+                }
+                Model.list = listString.toString();
                 randomList1 = new StringBuilder();
                 randomList2 = new StringBuilder();
                 randomDisplayString1 = "";
@@ -73,11 +98,13 @@ public class RandomizedGUI extends JFrame {
                 santaAssignments.setText("");
                 santaAssigned.setText("");
                 Model.people = new ArrayList<>();
-                String[] temp = santaAssignments.getText().split("\n");
-                for (String str : temp) {
-                    Model.people.add(new Person(str, false, false));
-                }
-                Model.setPeopleAndAssignments();
+                dispose();
+                new AddPeopleGUI("Secret Santa", Model.list);
+//                String[] temp = santaAssignments.getText().split("\n");
+//                for (String str : temp) {
+//                    Model.people.add(new Person(str, false, false));
+//                }
+//                Model.setPeopleAndAssignments();
             }
         });
         saveButton.addActionListener(new ActionListener() {
