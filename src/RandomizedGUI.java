@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.Map;
 
 /**
@@ -49,7 +50,9 @@ public class RandomizedGUI extends JFrame {
             String person = p.getKey().getName();
             String assignment = p.getValue().getName();
             randomList1.append(person);
+            randomList1.append("\n");
             randomList2.append(assignment);
+            randomList2.append("\n");
         }
         santaAssignments.setText(randomList1.toString());
         santaAssigned.setText(randomList2.toString());
@@ -63,8 +66,18 @@ public class RandomizedGUI extends JFrame {
         reDoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                new RandomizedGUI("Secret Santa");
+                randomList1 = new StringBuilder();
+                randomList2 = new StringBuilder();
+                randomDisplayString1 = "";
+                randomDisplayString2 = "";
+                santaAssignments.setText("");
+                santaAssigned.setText("");
+                Model.people = new ArrayList<>();
+                String[] temp = santaAssignments.getText().split("\n");
+                for (String str : temp) {
+                    Model.people.add(new Person(str, false, false));
+                }
+                Model.setPeopleAndAssignments();
             }
         });
         saveButton.addActionListener(new ActionListener() {

@@ -75,10 +75,8 @@ public class AddPeopleGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String[] temp = addedPeople.getText().split("\n");
-                int j = 0;
                 for (String str : temp) {
                     Model.people.add(new Person(str, false, false));
-                    j++;
                 }
                 Model.setPeopleAndAssignments();
                 dispose();

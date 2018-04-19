@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3284bac-28ca-4ffc-a9ac-80d8d6738dc2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddPeopleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPeopleGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomizedGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomizedGUI.java" afterDir="false" />
     </list>
     <ignored path="SecretSantaGUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="AddPeopleGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1632#1799#0" expanded="true" />
@@ -52,7 +53,6 @@
                 <element signature="e#1995#1996#0" expanded="true" />
                 <element signature="e#2258#2990#0" expanded="true" />
                 <element signature="e#2989#2990#0" expanded="true" />
-                <element signature="e#3035#3535#0" expanded="true" />
                 <element signature="e#3534#3535#0" expanded="true" />
                 <element signature="e#3366#3804#0" expanded="true" />
                 <element signature="e#3803#3804#0" expanded="true" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomizedGUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RandomizedGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+            <state relative-caret-position="429">
+              <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1723#1880#0" expanded="true" />
@@ -85,11 +85,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomizedGUI.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -131,11 +126,11 @@
         <option value="$PROJECT_DIR$/src/FileNameGUI.java" />
         <option value="$PROJECT_DIR$/src/ImportFileGUI.form" />
         <option value="$PROJECT_DIR$/src/MenuGUI.java" />
-        <option value="$PROJECT_DIR$/src/AddPeopleGUI.java" />
         <option value="$PROJECT_DIR$/src/ImportFileGUI.java" />
         <option value="$PROJECT_DIR$/src/RandomizedGUI.form" />
-        <option value="$PROJECT_DIR$/src/RandomizedGUI.java" />
         <option value="$PROJECT_DIR$/src/Model.java" />
+        <option value="$PROJECT_DIR$/src/AddPeopleGUI.java" />
+        <option value="$PROJECT_DIR$/src/RandomizedGUI.java" />
       </list>
     </option>
   </component>
@@ -646,12 +641,12 @@
       <workItem from="1496693549758" duration="153000" />
       <workItem from="1497363798757" duration="347000" />
       <workItem from="1523991286498" duration="7627000" />
-      <workItem from="1524003470752" duration="15941000" />
+      <workItem from="1524003470752" duration="17764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60150000" />
+    <option name="totallyTimeSpent" value="61973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -997,10 +992,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1632#1799#0" expanded="true" />
@@ -1009,7 +1017,6 @@
             <element signature="e#1995#1996#0" expanded="true" />
             <element signature="e#2258#2990#0" expanded="true" />
             <element signature="e#2989#2990#0" expanded="true" />
-            <element signature="e#3035#3535#0" expanded="true" />
             <element signature="e#3534#3535#0" expanded="true" />
             <element signature="e#3366#3804#0" expanded="true" />
             <element signature="e#3803#3804#0" expanded="true" />
@@ -1017,27 +1024,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        <state relative-caret-position="429">
+          <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1723#1880#0" expanded="true" />
             <element signature="e#1879#1880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
