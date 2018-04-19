@@ -48,31 +48,13 @@ public class RandomizedGUI extends JFrame {
         randomList2 = new StringBuilder();
         randomDisplayString1 = "";
         randomDisplayString2 = "";
-        boolean check = true;
-        long startTime = System.currentTimeMillis();
-        while (check) {
-            int l = 0;
-            for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
-                long newTime = System.currentTimeMillis() - startTime;
-                if (newTime < 1500) {
-                    check = true;
-                    randomList1 = new StringBuilder();
-                    randomList2 = new StringBuilder();
-                    randomDisplayString1 = "";
-                    randomDisplayString2 = "";
-                    System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
-                    break;
-                } else {
-                    check = false;
-                }
-                String person = p.getKey().getName();
-                String assignment = p.getValue().getName();
-                randomList1.append(person);
-                randomList1.append("\n");
-                randomList2.append(assignment);
-                randomList2.append("\n");
-                l++;
-            }
+        for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
+            String person = p.getKey().getName();
+            String assignment = p.getValue().getName();
+            randomList1.append(person);
+            randomList1.append("\n");
+            randomList2.append(assignment);
+            randomList2.append("\n");
         }
         santaAssignments.setText(randomList1.toString());
         santaAssigned.setText(randomList2.toString());

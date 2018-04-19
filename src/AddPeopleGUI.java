@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/18/2018
+ * Version 4/19/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -58,6 +58,12 @@ public class AddPeopleGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (!(Model.counterAdded == 13)) {
+                    String[] temp = addedPeople.getText().split("\n");
+                    if (Model.counterAdded != temp.length) {
+                        Model.counterAdded = temp.length;
+                    } else if (temp.length == 0) {
+                        Model.counter = 0;
+                    }
                     if (Model.counter == 0) {
                         addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
                     } else {
