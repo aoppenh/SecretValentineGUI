@@ -9,7 +9,7 @@ import java.util.*;
  * Version 4/18/2018
  */
 public class Model {
-    static Hashtable<Person, Person> peopleAndAssignments = new Hashtable<>();
+    static Hashtable<Person, Person> peopleAndAssignments;
     static ArrayList<Person> people = new ArrayList<>();
     static int counter;
     static int counterAdded;
@@ -29,10 +29,11 @@ public class Model {
     static String importDisplayString;
 
     public static void setPeopleAndAssignments() {
+        peopleAndAssignments = new Hashtable<>();
         counterAssign = 0;
         i = 0;
-        while (counterAssign < people.size() - 1) {
-            int ran = r.nextInt(people.size() - 1);
+        while (counterAssign < people.size()) {
+            int ran = r.nextInt(people.size());
             for (Person p : people) {
                 System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
             }
