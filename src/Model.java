@@ -28,6 +28,7 @@ public class Model {
     static StringBuilder readBuilder;
     static StringBuilder saveBuilder;
     static String importDisplayString;
+    static String tempDisplayString = "";
     static String saveString;
 
     public static void setPeopleAndAssignments() {

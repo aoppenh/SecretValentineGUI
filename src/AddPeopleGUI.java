@@ -10,14 +10,15 @@ import java.awt.event.ActionListener;
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
     private JPanel topPanel;
+    private JPanel middlePanel;
     private JPanel bottomPanel;
     private JTextArea addedPeople;
+    private JScrollPane addScroll;
     private JButton addPersonButton;
     private JTextField addPersonBox;
     private JButton exitButton;
     private JButton randomizeButton;
     private JButton importFileButton;
-    private JPanel middlePanel;
     private JLabel imgLabel2;
     private JLabel imgLabel1;
     private Container cPane;
@@ -56,31 +57,24 @@ public class AddPeopleGUI extends JFrame {
                 System.exit(0);
             }
         });
-        // Add threading below to continually check for over max lists and remove the last member of the list till the list has reached the maximum list size
         addPersonButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!(Model.counterAdded == 13)) {
-                    String[] temp = addedPeople.getText().split("\n");
-                    if (Model.counterAdded != temp.length) {
-                        Model.counterAdded = temp.length;
-                    } else if (temp.length == 0) {
-                        Model.counter = 0;
-                    }
-                    if (Model.counter == 0) {
-                        addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
-                    } else {
-                        addedPeople.setText(addedPeople.getText() + "\n" + addPersonBox.getText());
-                    }
-                    Model.counter++;
-                    Model.counterAdded++;
-                    if (Model.counterAdded == 13) {
-                        addedPeople.setEnabled(false);
-                    }
-                    addPersonBox.setText("Enter Name ...");
-                } else {
-                    new ErrorGUI("Secret Santa Error", "Maximum Capacity Reached");
+                Model.tempDisplayString = "";
+                String[] temp = addedPeople.getText().split("\n");
+                if (Model.counterAdded != temp.length) {
+                    Model.counterAdded = temp.length;
+                } else if (temp.length == 0) {
+                    Model.counter = 0;
                 }
+                if (Model.counter == 0) {
+                    addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
+                } else {
+                    addedPeople.setText(addedPeople.getText() + "\n" + addPersonBox.getText());
+                }
+                Model.counter++;
+                Model.counterAdded++;
+                addPersonBox.setText("Enter Name ...");
             }
         });
         randomizeButton.addActionListener(new ActionListener() {
@@ -99,6 +93,7 @@ public class AddPeopleGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    Model.tempDisplayString = addedPeople.getText();
                     new ImportFileGUI("Secret Santa");
                     dispose();
                 } catch (Exception e1) {

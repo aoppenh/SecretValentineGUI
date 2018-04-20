@@ -34,8 +34,10 @@ public class ImportFileGUI extends JFrame {
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String[] t = Model.tempDisplayString.split("\n");
+                Model.counter = t.length - 1;
                 dispose();
-                new AddPeopleGUI("Secret Santa", "");
+                new AddPeopleGUI("Secret Santa", Model.tempDisplayString);
             }
         });
         importButton.addActionListener(new ActionListener() {

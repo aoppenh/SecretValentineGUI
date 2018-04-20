@@ -58,31 +58,41 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="1fa00" class="javax.swing.JTextArea" binding="santaAssignments">
+          <scrollpane id="549b" binding="assignmentScroll">
             <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
-              </grid>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <background color="-4449516"/>
-              <font name="Lucida Sans Typewriter" size="22" style="1"/>
-              <foreground color="-12010705"/>
-              <text value=""/>
-            </properties>
-          </component>
-          <component id="c7c3e" class="javax.swing.JTextArea" binding="santaAssigned">
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1fa00" class="javax.swing.JTextArea" binding="santaAssignments">
+                <constraints/>
+                <properties>
+                  <background color="-4449516"/>
+                  <font name="Lucida Sans Typewriter" size="22" style="1"/>
+                  <foreground color="-12010705"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="82b12" binding="assignedScroll">
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
-              </grid>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <background color="-4449516"/>
-              <font name="Lucida Sans Typewriter" size="22" style="1"/>
-              <foreground color="-12010705"/>
-            </properties>
-          </component>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c7c3e" class="javax.swing.JTextArea" binding="santaAssigned">
+                <constraints/>
+                <properties>
+                  <background color="-4449516"/>
+                  <font name="Lucida Sans Typewriter" size="22" style="1"/>
+                  <foreground color="-12010705"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </grid>
       <grid id="774bb" binding="bottomPanel" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

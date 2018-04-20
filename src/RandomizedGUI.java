@@ -23,6 +23,8 @@ public class RandomizedGUI extends JFrame {
     private JLabel imgLabel1;
     private JLabel imgLabel2;
     private JButton saveButton;
+    private JScrollPane assignmentScroll;
+    private JScrollPane assignedScroll;
     private StringBuilder randomList1;
     private StringBuilder randomList2;
     private StringBuilder listString;
