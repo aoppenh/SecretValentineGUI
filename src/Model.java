@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/19/2018
+ * Version 4/20/2018
  */
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments;

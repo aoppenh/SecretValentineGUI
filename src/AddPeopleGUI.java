@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/19/2018
+ * Version 4/20/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -21,6 +21,8 @@ public class AddPeopleGUI extends JFrame {
     private JButton importFileButton;
     private JLabel imgLabel2;
     private JLabel imgLabel1;
+    private JLabel imgLabel3;
+    private JLabel imgLabel4;
     private Container cPane;
     private Color customColor = new Color(72,187,47);
 
@@ -37,6 +39,7 @@ public class AddPeopleGUI extends JFrame {
         cPane.add(formPanel);
         addPersonBox.setText("Enter Name ...");
         addedPeople.setEnabled(true);
+        addScroll.setPreferredSize(new Dimension(1326, 800));
         addedPeople.setText(list);
         addedPeople.setDisabledTextColor(customColor);
         exitButton.setPreferredSize(new Dimension(140, 70));
@@ -45,6 +48,8 @@ public class AddPeopleGUI extends JFrame {
         importFileButton.setPreferredSize(new Dimension(140, 70));
         imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
+        imgLabel3.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
+        imgLabel4.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
         addPersonBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

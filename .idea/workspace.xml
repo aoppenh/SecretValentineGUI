@@ -9,15 +9,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/MenuGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddPeopleGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPeopleGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddPeopleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPeopleGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImportFileGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImportFileGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomizedGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomizedGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomizedGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomizedGUI.java" afterDir="false" />
     </list>
     <ignored path="SecretSantaGUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +35,8 @@
       <file leaf-file-name="AddPeopleGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+            <state relative-caret-position="225">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1869#2036#0" expanded="true" />
@@ -60,25 +54,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model.java">
+      <file leaf-file-name="MenuGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MenuGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state relative-caret-position="378">
+              <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportFileGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ImportFileGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2007#2164#0" expanded="true" />
+                <element signature="e#2163#2164#0" expanded="true" />
+                <element signature="e#2203#2409#0" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,6 +73,18 @@
       <file leaf-file-name="AddPeopleGUI.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.form">
           <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -128,12 +126,12 @@
         <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/src/RandomizedGUI.java" />
         <option value="$PROJECT_DIR$/src/FileNameGUI.java" />
-        <option value="$PROJECT_DIR$/src/MenuGUI.java" />
         <option value="$PROJECT_DIR$/src/threadCheck.java" />
         <option value="$PROJECT_DIR$/src/RandomizedGUI.form" />
-        <option value="$PROJECT_DIR$/src/Model.java" />
         <option value="$PROJECT_DIR$/src/ImportFileGUI.java" />
         <option value="$PROJECT_DIR$/src/AddPeopleGUI.form" />
+        <option value="$PROJECT_DIR$/src/Model.java" />
+        <option value="$PROJECT_DIR$/src/MenuGUI.java" />
         <option value="$PROJECT_DIR$/src/AddPeopleGUI.java" />
       </list>
     </option>
@@ -176,13 +174,7 @@
               <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AddPeopleGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ImportFileGUI" type="e9f4de52:FormNode" />
+              <item name="MenuGUI" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
@@ -648,12 +640,12 @@
       <workItem from="1497363798757" duration="347000" />
       <workItem from="1523991286498" duration="7627000" />
       <workItem from="1524003470752" duration="26833000" />
-      <workItem from="1524188383399" duration="7066000" />
+      <workItem from="1524188383399" duration="9008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78108000" />
+    <option name="totallyTimeSpent" value="80050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -978,20 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MenuGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1908#2065#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2104#2310#0" expanded="true" />
-            <element signature="e#2309#2310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileNameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1024,16 +1002,6 @@
     <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ImportFileGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1047,10 +1015,40 @@
     <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/snowman-160884__340.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2007#2164#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2203#2409#0" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        <state relative-caret-position="225">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1869#2036#0" expanded="true" />
