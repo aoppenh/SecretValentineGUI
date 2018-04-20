@@ -5,10 +5,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Map;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/17/2018
+ * Version 4/19/2018
  */
 public class FileNameGUI extends JFrame {
     private JPanel formPanel;
@@ -59,6 +60,11 @@ public class FileNameGUI extends JFrame {
                     }
                     if (test) {
                         Model.newFile.createNewFile();
+                        Model.saveBuilder = new StringBuilder();
+                        Model.saveString = "";
+                        for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
+                            Model.saveBuilder.append(p.getKey().getName() + " will buy a gift for " + p.getValue().getName() + "\n");
+                        }
                         Model.save();
                         dispose();
                     }

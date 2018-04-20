@@ -26,7 +26,9 @@ public class Model {
     static PrintWriter writer;
     static Scanner reader;
     static StringBuilder readBuilder;
+    static StringBuilder saveBuilder;
     static String importDisplayString;
+    static String saveString;
 
     public static void setPeopleAndAssignments() {
         peopleAndAssignments = new Hashtable<>();
@@ -61,8 +63,9 @@ public class Model {
     }
 
     public static void save() throws FileNotFoundException {
+        saveString = saveBuilder.toString();
         writer = new PrintWriter(newFile);
-        writer.println(list);
+        writer.println(saveString);
         writer.close();
     }
 

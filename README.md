@@ -1,3 +1,3 @@
-A Secret Santa Program
+SecretSantaGUI
 
-This is an unfininished, on-hold, side project.
+A program for typing in names or importing name lists from the desktop to randomize into a Secret Santa List and Save to the desktop.
