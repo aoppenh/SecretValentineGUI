@@ -56,6 +56,7 @@ public class AddPeopleGUI extends JFrame {
                 System.exit(0);
             }
         });
+        // Add threading below to continually check for over max lists and remove the last member of the list till the list has reached the maximum list size
         addPersonButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

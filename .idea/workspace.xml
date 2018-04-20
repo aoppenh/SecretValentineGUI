@@ -24,12 +24,13 @@
       <file leaf-file-name="AddPeopleGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1632#1799#0" expanded="true" />
                 <element signature="e#1798#1799#0" expanded="true" />
+                <element signature="e#1839#1996#0" expanded="true" />
                 <element signature="e#1995#1996#0" expanded="true" />
                 <element signature="e#2056#3244#0" expanded="true" />
                 <element signature="e#3243#3244#0" expanded="true" />
@@ -143,7 +144,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="544" />
     <option name="width" value="1382" />
     <option name="height" value="1047" />
@@ -647,16 +648,15 @@
       <workItem from="1496693549758" duration="153000" />
       <workItem from="1497363798757" duration="347000" />
       <workItem from="1523991286498" duration="7627000" />
-      <workItem from="1524003470752" duration="26210000" />
+      <workItem from="1524003470752" duration="26833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70419000" />
+    <option name="totallyTimeSpent" value="71042000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -668,7 +668,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29520696" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29520696" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Designer" order="3" />
@@ -1027,12 +1027,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1632#1799#0" expanded="true" />
             <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1839#1996#0" expanded="true" />
             <element signature="e#1995#1996#0" expanded="true" />
             <element signature="e#2056#3244#0" expanded="true" />
             <element signature="e#3243#3244#0" expanded="true" />
