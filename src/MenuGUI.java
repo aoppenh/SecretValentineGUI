@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
+ * Version 4/19/2018
  */
 public class MenuGUI extends JFrame {
     private JPanel formPanel;
@@ -36,10 +37,11 @@ public class MenuGUI extends JFrame {
         cPane.add(formPanel);
         addButton.setPreferredSize(new Dimension(70, 70));
         exitButton.setPreferredSize(new Dimension(70, 70));
-        imgLabel.setIcon(new ImageIcon("src\\santas-hat-43847__340.png"));
+        imgLabel.setIcon(new ImageIcon("src\\christmas-160950__340.png"));
         imgLabel1.setIcon(new ImageIcon("src\\reindeer-160879__340.png"));
         imgLabel2.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
-        imgLabel3.setIcon(new ImageIcon("src\\flower-1829706__340.jpg.png"));
+//        imgLabel3.setIcon(new ImageIcon("src\\flower-1829706__340.jpg.png"));
+        imgLabel3.setIcon(new ImageIcon("src\\santas-hat-43847__340.png"));
         imgLabel4.setIcon(new ImageIcon("src\\christmas-ball-147410__340.png"));
         imgLabel5.setIcon(new ImageIcon("src\\christmas-tree-23384__340.png"));
         imgLabel6.setIcon(new ImageIcon("src\\hot-chocolate-576418__340.png"));
