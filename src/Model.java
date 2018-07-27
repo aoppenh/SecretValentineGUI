@@ -6,13 +6,14 @@ import java.util.*;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/20/2018
+ * Version 7/27/2018
  */
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments;
     static ArrayList<Person> people = new ArrayList<>();
-    static int counter;
+    static int counter = 0;
     static int counterAdded;
+    static boolean falseImportCheck = false;
     static int counterAssign;
     static int i;
     static Random r = new Random();
@@ -79,5 +80,6 @@ public class Model {
         }
         reader.close();
         importDisplayString = readBuilder.toString();
+        falseImportCheck = false;
     }
 }

@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/19/2018
+ * Version 7/27/2018
  */
 public class ImportFileGUI extends JFrame {
     private JPanel formPanel;
@@ -49,6 +49,7 @@ public class ImportFileGUI extends JFrame {
                     new AddPeopleGUI("Secret Santa", Model.importDisplayString);
                     dispose();
                 } catch (FileNotFoundException e1) {
+                    Model.falseImportCheck = true;
                     e1.printStackTrace();
                     new ErrorGUI("Secret Santa Error", "File Not Found");
                 }

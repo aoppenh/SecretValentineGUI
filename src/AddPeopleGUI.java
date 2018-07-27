@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 4/20/2018
+ * Version 7/27/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -27,7 +27,6 @@ public class AddPeopleGUI extends JFrame {
     private Color customColor = new Color(72,187,47);
 
     public AddPeopleGUI(String title, String list) {
-        Model.counter = 0;
         Model.counterAdded = 0;
         cPane = this.getContentPane();
         this.setTitle(title);
@@ -72,11 +71,15 @@ public class AddPeopleGUI extends JFrame {
                 } else if (temp.length == 0) {
                     Model.counter = 0;
                 }
-                if (Model.counter == 0) {
-                    addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
-                } else {
-                    addedPeople.setText(addedPeople.getText() + "\n" + addPersonBox.getText());
-                }
+                String strTemp = addedPeople.getText() + addPersonBox.getText() + "\n";
+                String[] strLines = strTemp.split("\n");
+                Model.counter = strLines.length;
+//                if (Model.counter == 0 && Model.counterAdded == 0) {
+//                    addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
+//                } else {
+//                    addedPeople.setText(addedPeople.getText() + "\n" + addPersonBox.getText());
+//                }
+                addedPeople.setText(addedPeople.getText() + addPersonBox.getText() + "\n");
                 Model.counter++;
                 Model.counterAdded++;
                 addPersonBox.setText("Enter Name ...");
