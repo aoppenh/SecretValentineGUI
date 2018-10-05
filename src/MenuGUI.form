@@ -61,7 +61,7 @@
               <background color="-4449516"/>
               <font name="Lucida Sans Typewriter" size="18" style="1"/>
               <foreground color="-327695"/>
-              <text value=" Secret Valentine"/>
+              <text value="Secret Valentine"/>
             </properties>
           </component>
           <component id="e3c93" class="javax.swing.JButton" binding="exitButton" default-binding="true">
@@ -72,7 +72,7 @@
               <background color="-4449516"/>
               <font name="Lucida Sans Typewriter" size="18" style="1"/>
               <foreground color="-327695"/>
-              <text value="    Exit    "/>
+              <text value="     Exit     "/>
             </properties>
           </component>
           <vspacer id="769a6">
