@@ -20,9 +20,6 @@ public class AddPeopleGUI extends JFrame {
     private JTextField addPersonBox;
     private JButton exitButton;
     private JButton randomizeButton;
-//    private JButton importFileButton;
-    private JLabel imgLabel2;
-    private JLabel imgLabel1;
     private JLabel imgLabel3;
     private JLabel imgLabel4;
     private JComboBox addPrefBox;
@@ -49,11 +46,8 @@ public class AddPeopleGUI extends JFrame {
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
         deletePersonButton.setPreferredSize(new Dimension(140, 70));
-//        importFileButton.setPreferredSize(new Dimension(140, 70));
-        imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
-        imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
-        imgLabel3.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
-        imgLabel4.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
+        imgLabel3.setIcon(new ImageIcon("src\\4_filled_hearts.png"));
+        imgLabel4.setIcon(new ImageIcon("src\\4_filled_hearts.png"));
         addPersonBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -123,23 +117,5 @@ public class AddPeopleGUI extends JFrame {
                 new RandomizedGUI("Secret Santa");
             }
         });
-        // May re-add the below functionality later
-//        importFileButton.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                try {
-//                    Model.tempDisplayString = addedPeople.getText();
-//                    new ImportFileGUI("Secret Santa");
-//                    dispose();
-//                } catch (Exception e1) {
-//                    e1.printStackTrace();
-//                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
-//                }
-//            }
-//        });
     }
-
-//    public static void main(String[] args) {
-//        new AddPeopleGUI("Secret Santa");
-//    }
 }
