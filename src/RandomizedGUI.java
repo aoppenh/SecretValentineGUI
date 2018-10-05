@@ -81,7 +81,6 @@ public class RandomizedGUI extends JFrame {
                 santaAssignments.setText("");
                 santaAssigned.setText("");
                 Model.people = new ArrayList<>();
-                Model.timeCheck = false;
                 dispose();
                 new AddPeopleGUI("Secret Santa", Model.list);
             }

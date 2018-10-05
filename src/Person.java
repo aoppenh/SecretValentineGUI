@@ -21,16 +21,23 @@ public class Person {
     public boolean getAssigned() {
         return assigned;
     }
-    public boolean getSanta() {
+    public boolean getValen() {
         return valen;
     }
     public Preference getPref() {
         return pref;
     }
 
-    public void set(String name, boolean assigned, boolean santa) {
+    public void set(String name, boolean assigned, boolean valen, Preference pref) {
         this.name = name;
         this.assigned = assigned;
-        this.valen = santa;
+        this.valen = valen;
+        this.pref = pref;
+    }
+
+    public void set(String name, boolean assigned, boolean valen) {
+        this.name = name;
+        this.assigned = assigned;
+        this.valen = valen;
     }
 }

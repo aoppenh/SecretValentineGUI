@@ -31,7 +31,6 @@ public class Model {
     static String importDisplayString;
     static String tempDisplayString = "";
     static String saveString;
-    static boolean timeCheck = false;
 
     public static void setPeopleAndAssignments() {
         peopleAndAssignments = new Hashtable<>();
@@ -42,9 +41,9 @@ public class Model {
         while (counterAssign < people.size()) {
             int ran = r.nextInt(people.size());
             newTime = System.currentTimeMillis() - startTime;
-            if (newTime > 1250) {
+            if (newTime > 5000) {
                 for (Person p : people) {
-                    p.set(p.getName(), false, false);
+                    p.set(p.getName(), false, false, p.getPref());
                 }
                 i = 0;
                 counterAssign = 0;
@@ -52,22 +51,24 @@ public class Model {
                 startTime = System.currentTimeMillis();
 //                System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
             }
-            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta() && checkCompatible(people.get(i), people.get(ran)) && !timeCheck) {
-                peopleAndAssignments.put(people.get(ran), people.get(i));
-                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
-                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
-                counterAssign++;
-                i++;
-            } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
-                peopleAndAssignments.put(people.get(ran), people.get(i));
-                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
-                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
-                counterAssign++;
-                i++;
-            }
-            if (newTime > 10000) {
-                timeCheck = true;
+            if (newTime > 5000) {
                 i = 0;
+                for (Person p : people) {
+                    p.set(p.getName(), false, false, Preference.BISEXUAL);
+                }
+            }
+            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getValen() && checkCompatible(people.get(i), people.get(ran)) && newTime <= 5000) {
+                peopleAndAssignments.put(people.get(ran), people.get(i));
+                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getValen());
+                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+                counterAssign++;
+                i++;
+            } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getValen()) {
+                peopleAndAssignments.put(people.get(ran), people.get(i));
+                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getValen());
+                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+                counterAssign++;
+                i++;
             }
         }
     }
