@@ -12,7 +12,7 @@ public class SplashGUI extends JFrame {
     private JPanel formPanel;
     private JLabel imgLabel;
     private Container cPane;
-    BufferedImage img = ImageIO.read(new File("src\\SecretSantaGUI.jpg"));
+    BufferedImage img = ImageIO.read(new File("src\\Logo.png"));
 
     public SplashGUI(String title) throws IOException {
         this.setTitle(title);
