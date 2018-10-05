@@ -25,6 +25,6 @@ public class SplashGUI extends JFrame {
         cPane = this.getContentPane();
         cPane.add(formPanel);
         formPanel.setBackground(new Color(img.getRGB(428, 602), true));
-        imgLabel.setIcon(new ImageIcon("src\\SecretSantaGUI.jpg"));
+        imgLabel.setIcon(new ImageIcon("src\\Logo.png"));
     }
 }
