@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3284bac-28ca-4ffc-a9ac-80d8d6738dc2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Preference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/RandomizedGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/RandomizedGUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/RandomizedGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/RandomizedGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecretSantaGUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SecretValentineGUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/AddPeopleGUI$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecretSantaGUI/ImportFileGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecretSantaGUI/ImportFileGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddPeopleGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPeopleGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddPeopleGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddPeopleGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImportFileGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImportFileGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileNameGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileNameGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomizedGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomizedGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomizedGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomizedGUI.java" afterDir="false" />
     </list>
     <ignored path="SecretSantaGUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,22 +33,39 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="724083723">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.105" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,6 +79,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1585421150">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="2578" />
+          <entry key="md" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2578" />
+          <entry key="Markdown" value="19" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="form" value="5" />
+          <entry key="java" value="6" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="GUI_DESIGNER_FORM" value="5" />
+          <entry key="JAVA" value="6" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="SecretSantaGUI" />
@@ -61,30 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-901">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2061#2228#0" expanded="true" />
-                <element signature="e#2227#2228#0" expanded="true" />
-                <element signature="e#2268#2425#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-                <element signature="e#2470#3372#0" expanded="true" />
-                <element signature="e#3371#3372#0" expanded="true" />
-                <element signature="e#3417#3865#0" expanded="true" />
-                <element signature="e#3864#3865#0" expanded="true" />
-                <element signature="e#3911#4391#0" expanded="true" />
-                <element signature="e#4390#4391#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -92,20 +133,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="85">
+              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ImportFileGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state relative-caret-position="484">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Preference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
               <folding>
-                <element signature="e#1478#2088#0" expanded="true" />
-                <element signature="e#2087#2088#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2942#4882#0" expanded="true" />
+                <element signature="e#4881#4882#0" expanded="true" />
+                <element signature="e#4927#5336#0" expanded="true" />
+                <element signature="e#5335#5336#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +204,7 @@
         <option value="Singleton" />
         <option value="CoffeeScript File" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -128,6 +212,7 @@
     <findStrings>
       <find>path</find>
       <find>list</find>
+      <find>tempPeople</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,24 +224,26 @@
         <option value="$PROJECT_DIR$/src/Controller.java" />
         <option value="$PROJECT_DIR$/src/Perso.java" />
         <option value="$PROJECT_DIR$/src/MenuGUI.form" />
-        <option value="$PROJECT_DIR$/src/ErrorGUI.form" />
         <option value="$PROJECT_DIR$/src/m.coffee" />
         <option value="$PROJECT_DIR$/src/FileNameGUI.form" />
         <option value="$PROJECT_DIR$/src/ImportFileGUI.form" />
         <option value="$PROJECT_DIR$/src/ErrorGUI.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Person.java" />
-        <option value="$PROJECT_DIR$/src/RandomizedGUI.java" />
-        <option value="$PROJECT_DIR$/src/FileNameGUI.java" />
         <option value="$PROJECT_DIR$/src/threadCheck.java" />
-        <option value="$PROJECT_DIR$/src/AddPeopleGUI.form" />
         <option value="$PROJECT_DIR$/src/MenuGUI.java" />
         <option value="$PROJECT_DIR$/src/SplashGUI.java" />
         <option value="$PROJECT_DIR$/src/SplashGUI.form" />
         <option value="$PROJECT_DIR$/src/RandomizedGUI.form" />
         <option value="$PROJECT_DIR$/src/ImportFileGUI.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Preference.java" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
+        <option value="$PROJECT_DIR$/src/ErrorGUI.form" />
         <option value="$PROJECT_DIR$/src/Model.java" />
+        <option value="$PROJECT_DIR$/src/RandomizedGUI.java" />
+        <option value="$PROJECT_DIR$/src/AddPeopleGUI.form" />
         <option value="$PROJECT_DIR$/src/AddPeopleGUI.java" />
+        <option value="$PROJECT_DIR$/src/FileNameGUI.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -167,8 +254,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="636" />
-    <option name="width" value="1291" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -177,67 +264,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="SecretValentineGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecretValentineGUI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="SecretValentineGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecretValentineGUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AddPeopleGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ErrorGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="SecretValentineGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecretValentineGUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="FileNameGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ImportFileGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MenuGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="RandomizedGUI" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="SecretSantaGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecretSantaGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SplashGUI" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,9 +296,11 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="332" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538706831694" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,7 +419,7 @@
     </configuration>
     <configuration name="ErrorGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ErrorGUI" />
-      <module name="SecretSantaGUI" />
+      <module name="SecretValentineGUI" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -374,7 +427,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="SecretSantaGUI" />
+      <module name="SecretValentineGUI" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -389,7 +442,7 @@
     </configuration>
     <configuration name="SplashGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SplashGUI" />
-      <module name="SecretSantaGUI" />
+      <module name="SecretValentineGUI" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -403,7 +456,7 @@
     </configuration>
     <configuration name="hfhjsegr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hfhjsegr" />
-      <module name="SecretSantaGUI" />
+      <module name="SecretValentineGUI" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -552,18 +605,30 @@
       <workItem from="1524188383399" duration="9354000" />
       <workItem from="1524598028862" duration="722000" />
       <workItem from="1532702435978" duration="302000" />
-      <workItem from="1532703784720" duration="3992000" />
+      <workItem from="1532703784720" duration="4083000" />
+      <workItem from="1532750325059" duration="590000" />
+      <workItem from="1538692308660" duration="411000" />
+      <workItem from="1538693066221" duration="9915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85412000" />
+    <option name="totallyTimeSpent" value="96419000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Palette&#9;" order="3" />
@@ -572,17 +637,17 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29477197" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29477197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997722" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32925472" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32925472" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32925472" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3267974" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3259177" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32897604" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32925472" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -672,21 +737,7 @@
     <entry file="file://$PROJECT_DIR$/src/m.coffee" />
     <entry file="file://$PROJECT_DIR$/src/Secret Santa.lnk" />
     <entry file="file://$PROJECT_DIR$/nullnull" />
-    <entry file="file://$USER_HOME$/Desktop/CS SEMESTER ONE/cs 180/cs180/Password/src/Password.java" />
-    <entry file="file://$PROJECT_DIR$/src/ErrorGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileNameGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="65" column="97" selection-start-line="65" selection-start-column="97" selection-end-line="65" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../CS SEMESTER ONE/cs 180/cs180/Password/src/Password.java" />
     <entry file="file://$PROJECT_DIR$/src/threadCheck.java" />
     <entry file="file://$PROJECT_DIR$/src/MenuGUI.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,62 +753,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/ImportFileGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        <state relative-caret-position="629">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ImportFileGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/Preference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErrorGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErrorGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SplashGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
           <folding>
-            <element signature="e#1478#2088#0" expanded="true" />
-            <element signature="e#2087#2088#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2942#4882#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4927#5336#0" expanded="true" />
+            <element signature="e#5335#5336#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddPeopleGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/FileNameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2061#2228#0" expanded="true" />
-            <element signature="e#2227#2228#0" expanded="true" />
-            <element signature="e#2268#2425#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2470#3372#0" expanded="true" />
-            <element signature="e#3371#3372#0" expanded="true" />
-            <element signature="e#3417#3865#0" expanded="true" />
-            <element signature="e#3864#3865#0" expanded="true" />
-            <element signature="e#3911#4391#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="229">
+          <caret line="65" column="102" selection-start-line="65" selection-start-column="102" selection-end-line="65" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomizedGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

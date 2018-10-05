@@ -63,7 +63,7 @@ public class FileNameGUI extends JFrame {
                         Model.saveBuilder = new StringBuilder();
                         Model.saveString = "";
                         for (Map.Entry<Person, Person> p : Model.peopleAndAssignments.entrySet()) {
-                            Model.saveBuilder.append(p.getKey().getName() + " will buy a gift for " + p.getValue().getName() + "\n");
+                            Model.saveBuilder.append(p.getKey().getName() + " will get a valentine for " + p.getValue().getName() + "\n");
                         }
                         Model.save();
                         dispose();

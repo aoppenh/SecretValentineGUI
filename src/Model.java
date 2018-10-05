@@ -31,6 +31,7 @@ public class Model {
     static String importDisplayString;
     static String tempDisplayString = "";
     static String saveString;
+    static boolean timeCheck = false;
 
     public static void setPeopleAndAssignments() {
         peopleAndAssignments = new Hashtable<>();
@@ -40,9 +41,6 @@ public class Model {
         long startTime = System.currentTimeMillis();
         while (counterAssign < people.size()) {
             int ran = r.nextInt(people.size());
-//            for (Person p : people) {
-//                System.out.println(p.getName() + " : " + p.getAssigned() + " : " + p.getSanta() + " : " + p.getClass());
-//            }
             newTime = System.currentTimeMillis() - startTime;
             if (newTime > 1250) {
                 for (Person p : people) {
@@ -54,13 +52,48 @@ public class Model {
                 startTime = System.currentTimeMillis();
 //                System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
             }
-            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
+            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta() && checkCompatible(people.get(i), people.get(ran).getSex()) && !timeCheck) {
+                peopleAndAssignments.put(people.get(ran), people.get(i));
+                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
+                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+                counterAssign++;
+                i++;
+            } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
+                // This looks the same as above, but what matters is
                 peopleAndAssignments.put(people.get(ran), people.get(i));
                 people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
                 people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
                 counterAssign++;
                 i++;
             }
+            if (newTime > 10000) {
+                timeCheck = true;
+                i = 0;
+            }
+        }
+    }
+
+    public static boolean checkCompatible(Person a, int b) {
+        if (a.getPref() == Preference.HOMOSEXUAL) {
+            if (b == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if (a.getPref() == Preference.LESBIAN) {
+            if (b == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if (a.getPref() == Preference.STRAIGHT) {
+            if (a.getSex() == b) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            return true;
         }
     }
 

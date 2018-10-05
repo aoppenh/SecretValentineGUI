@@ -83,11 +83,6 @@ public class RandomizedGUI extends JFrame {
                 Model.people = new ArrayList<>();
                 dispose();
                 new AddPeopleGUI("Secret Santa", Model.list);
-//                String[] temp = santaAssignments.getText().split("\n");
-//                for (String str : temp) {
-//                    Model.people.add(new Person(str, false, false));
-//                }
-//                Model.setPeopleAndAssignments();
             }
         });
         saveButton.addActionListener(new ActionListener() {

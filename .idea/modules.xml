@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SecretSantaGUI.iml" filepath="$PROJECT_DIR$/SecretSantaGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecretValentineGUI.iml" filepath="$PROJECT_DIR$/SecretValentineGUI.iml" />
     </modules>
   </component>
 </project>

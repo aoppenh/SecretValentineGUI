@@ -2,12 +2,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 7/27/2018
+ * Version 10/04/2018
  */
 public class AddPeopleGUI extends JFrame {
+    static ArrayList<Person> tempPeople = new ArrayList<>();
     private JPanel formPanel;
     private JPanel topPanel;
     private JPanel middlePanel;
@@ -18,11 +20,14 @@ public class AddPeopleGUI extends JFrame {
     private JTextField addPersonBox;
     private JButton exitButton;
     private JButton randomizeButton;
-    private JButton importFileButton;
+//    private JButton importFileButton;
     private JLabel imgLabel2;
     private JLabel imgLabel1;
     private JLabel imgLabel3;
     private JLabel imgLabel4;
+    private JComboBox addSexBox;
+    private JComboBox addPrefBox;
+    private JButton deletePersonButton;
     private Container cPane;
     private Color customColor = new Color(72,187,47);
 
@@ -44,7 +49,8 @@ public class AddPeopleGUI extends JFrame {
         exitButton.setPreferredSize(new Dimension(140, 70));
         randomizeButton.setPreferredSize(new Dimension(140, 70));
         addPersonButton.setPreferredSize(new Dimension(140, 70));
-        importFileButton.setPreferredSize(new Dimension(140, 70));
+        deletePersonButton.setPreferredSize(new Dimension(140, 70));
+//        importFileButton.setPreferredSize(new Dimension(140, 70));
         imgLabel1.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         imgLabel2.setIcon(new ImageIcon("src\\santa-160903__340.png"));
         imgLabel3.setIcon(new ImageIcon("src\\snowman-160884__340.png"));
@@ -55,6 +61,12 @@ public class AddPeopleGUI extends JFrame {
                 addPersonBox.setText("");
             }
         });
+        addSexBox.addItem("Male");
+        addSexBox.addItem("Female");
+        addPrefBox.addItem("Straight");
+        addPrefBox.addItem("Homosexual");
+        addPrefBox.addItem("Lesbian");
+        addPrefBox.addItem("Bisexual");
         exitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,42 +86,63 @@ public class AddPeopleGUI extends JFrame {
                 String strTemp = addedPeople.getText() + addPersonBox.getText() + "\n";
                 String[] strLines = strTemp.split("\n");
                 Model.counter = strLines.length;
-//                if (Model.counter == 0 && Model.counterAdded == 0) {
-//                    addedPeople.setText(addedPeople.getText() + addPersonBox.getText());
-//                } else {
-//                    addedPeople.setText(addedPeople.getText() + "\n" + addPersonBox.getText());
-//                }
                 addedPeople.setText(addedPeople.getText() + addPersonBox.getText() + "\n");
                 Model.counter++;
                 Model.counterAdded++;
-                addPersonBox.setText("Enter Name ...");
+                Preference tempP = Preference.DEFAULT;
+                switch (addPrefBox.getSelectedIndex()) {
+                    case 0:
+                        tempP = Preference.STRAIGHT;
+                        break;
+                    case 1:
+                        tempP = Preference.HOMOSEXUAL;
+                        break;
+                    case 2:
+                        tempP = Preference.LESBIAN;
+                        break;
+                    case 3:
+                        tempP = Preference.BISEXUAL;
+                        break;
+                }
+//                System.out.println(addPersonBox.getText() + " " + addSexBox.getSelectedIndex() + " " + tempP);
+                if (tempP == Preference.LESBIAN && addSexBox.getSelectedIndex() == 0 || tempP == Preference.HOMOSEXUAL && addSexBox.getSelectedIndex() == 1) {
+//                    new ErrorGUI("Secret Valentine", "┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻\n" + "\n(╯°□°）╯︵ ┻━┻");
+                    new ErrorGUI("Secret Valentine", "OWO, what's this?!");
+                } else {
+                    tempPeople.add(new Person(addPersonBox.getText(), false, false, addSexBox.getSelectedIndex(), tempP));
+                    addPersonBox.setText("Enter Name ...");
+                    addSexBox.setSelectedIndex(0);
+                    addPrefBox.setSelectedIndex(0);
+                }
             }
         });
         randomizeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String[] temp = addedPeople.getText().split("\n");
-                for (String str : temp) {
-                    Model.people.add(new Person(str, false, false));
+                int i = 0;
+                for (Person p : tempPeople) {
+                    Model.people.add(p);
+                    i++;
                 }
                 Model.setPeopleAndAssignments();
                 dispose();
                 new RandomizedGUI("Secret Santa");
             }
         });
-        importFileButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    Model.tempDisplayString = addedPeople.getText();
-                    new ImportFileGUI("Secret Santa");
-                    dispose();
-                } catch (Exception e1) {
-                    e1.printStackTrace();
-                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
-                }
-            }
-        });
+        // May re-add the below functionality later
+//        importFileButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                try {
+//                    Model.tempDisplayString = addedPeople.getText();
+//                    new ImportFileGUI("Secret Santa");
+//                    dispose();
+//                } catch (Exception e1) {
+//                    e1.printStackTrace();
+//                    new ErrorGUI("Secret Santa Error", "An Error Occurred");
+//                }
+//            }
+//        });
     }
 
 //    public static void main(String[] args) {

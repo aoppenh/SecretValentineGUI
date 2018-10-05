@@ -12,7 +12,7 @@ public class ErrorGUI extends JFrame {
     private JPanel middlePanel;
     private JPanel bottomPanel;
     private JLabel centerLabel;
-    private JLabel secretSantaLabel;
+    private JLabel secretValentineLabel;
     private JButton OKButton;
     private Container cPane;
 
