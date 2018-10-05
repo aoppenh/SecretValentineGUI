@@ -6,14 +6,12 @@ public class Person {
     private String name;
     private boolean assigned;
     private boolean valen;
-    private int sex;
     private Preference pref;
 
-    public Person(String name, boolean assigned, boolean valen, int sex, Preference pref) {
+    public Person(String name, boolean assigned, boolean valen, Preference pref) {
         this.name = name;
         this.assigned = assigned;
         this.valen = valen;
-        this.sex = sex;
         this.pref = pref;
     }
 
@@ -25,9 +23,6 @@ public class Person {
     }
     public boolean getSanta() {
         return valen;
-    }
-    public int getSex() {
-        return sex;
     }
     public Preference getPref() {
         return pref;

@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 7/27/2018
+ * Version 10/04/2018
  */
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments;
@@ -52,14 +52,13 @@ public class Model {
                 startTime = System.currentTimeMillis();
 //                System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
             }
-            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta() && checkCompatible(people.get(i), people.get(ran).getSex()) && !timeCheck) {
+            if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta() && checkCompatible(people.get(i), people.get(ran)) && !timeCheck) {
                 peopleAndAssignments.put(people.get(ran), people.get(i));
                 people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
                 people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
                 counterAssign++;
                 i++;
             } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getSanta()) {
-                // This looks the same as above, but what matters is
                 peopleAndAssignments.put(people.get(ran), people.get(i));
                 people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getSanta());
                 people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
@@ -73,21 +72,15 @@ public class Model {
         }
     }
 
-    public static boolean checkCompatible(Person a, int b) {
-        if (a.getPref() == Preference.HOMOSEXUAL) {
-            if (b == 0) {
+    public static boolean checkCompatible(Person a, Person b) {
+        if (a.getPref() == Preference.HOMOSEXUAL || a.getPref() == Preference.LESBIAN) {
+            if (a == b) {
                 return true;
             } else {
                 return false;
             }
-        } else if (a.getPref() == Preference.LESBIAN) {
-            if (b == 1) {
-                return true;
-            } else {
-                return false;
-            }
-        } else if (a.getPref() == Preference.STRAIGHT) {
-            if (a.getSex() == b) {
+        } else if (a.getPref() == Preference.STRAIGHT_MALE || a.getPref() == Preference.STRAIGHT_FEMALE) {
+            if (a == b) {
                 return false;
             } else {
                 return true;

@@ -25,7 +25,6 @@ public class AddPeopleGUI extends JFrame {
     private JLabel imgLabel1;
     private JLabel imgLabel3;
     private JLabel imgLabel4;
-    private JComboBox addSexBox;
     private JComboBox addPrefBox;
     private JButton deletePersonButton;
     private Container cPane;
@@ -61,9 +60,8 @@ public class AddPeopleGUI extends JFrame {
                 addPersonBox.setText("");
             }
         });
-        addSexBox.addItem("Male");
-        addSexBox.addItem("Female");
-        addPrefBox.addItem("Straight");
+        addPrefBox.addItem("Straight - Male");
+        addPrefBox.addItem("Straight - Female");
         addPrefBox.addItem("Homosexual");
         addPrefBox.addItem("Lesbian");
         addPrefBox.addItem("Bisexual");
@@ -92,28 +90,24 @@ public class AddPeopleGUI extends JFrame {
                 Preference tempP = Preference.DEFAULT;
                 switch (addPrefBox.getSelectedIndex()) {
                     case 0:
-                        tempP = Preference.STRAIGHT;
+                        tempP = Preference.STRAIGHT_MALE;
                         break;
                     case 1:
-                        tempP = Preference.HOMOSEXUAL;
+                        tempP = Preference.STRAIGHT_FEMALE;
                         break;
                     case 2:
-                        tempP = Preference.LESBIAN;
+                        tempP = Preference.HOMOSEXUAL;
                         break;
                     case 3:
+                        tempP = Preference.LESBIAN;
+                        break;
+                    case 4:
                         tempP = Preference.BISEXUAL;
                         break;
                 }
-//                System.out.println(addPersonBox.getText() + " " + addSexBox.getSelectedIndex() + " " + tempP);
-                if (tempP == Preference.LESBIAN && addSexBox.getSelectedIndex() == 0 || tempP == Preference.HOMOSEXUAL && addSexBox.getSelectedIndex() == 1) {
-//                    new ErrorGUI("Secret Valentine", "┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻\n" + "\n(╯°□°）╯︵ ┻━┻");
-                    new ErrorGUI("Secret Valentine", "OWO, what's this?!");
-                } else {
-                    tempPeople.add(new Person(addPersonBox.getText(), false, false, addSexBox.getSelectedIndex(), tempP));
-                    addPersonBox.setText("Enter Name ...");
-                    addSexBox.setSelectedIndex(0);
-                    addPrefBox.setSelectedIndex(0);
-                }
+                tempPeople.add(new Person(addPersonBox.getText(), false, false, tempP));
+                addPersonBox.setText("Enter Name ...");
+                addPrefBox.setSelectedIndex(0);
             }
         });
         randomizeButton.addActionListener(new ActionListener() {
