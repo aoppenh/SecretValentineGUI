@@ -2,14 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 10/04/2018
+ * Version 10/05/2018
  */
 public class AddPeopleGUI extends JFrame {
-    static ArrayList<Person> tempPeople = new ArrayList<>();
     private JPanel formPanel;
     private JPanel topPanel;
     private JPanel middlePanel;
@@ -99,7 +97,7 @@ public class AddPeopleGUI extends JFrame {
                         tempP = Preference.BISEXUAL;
                         break;
                 }
-                tempPeople.add(new Person(addPersonBox.getText(), false, false, tempP));
+                Model.tempPeople.add(new Person(addPersonBox.getText(), false, false, tempP));
                 addPersonBox.setText("Enter Name ...");
                 addPrefBox.setSelectedIndex(0);
             }
@@ -108,13 +106,20 @@ public class AddPeopleGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int i = 0;
-                for (Person p : tempPeople) {
+                for (Person p : Model.tempPeople) {
                     Model.people.add(p);
                     i++;
                 }
                 Model.setPeopleAndAssignments();
                 dispose();
                 new RandomizedGUI("Secret Santa");
+            }
+        });
+        deletePersonButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new DeletePeopleGUI("Secret Valentine");
             }
         });
     }

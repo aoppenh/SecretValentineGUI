@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ImportFileGUI">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DeletePeopleGUI">
   <grid id="27dc6" binding="formPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="619" height="400"/>
+      <xy x="20" y="20" width="708" height="400"/>
     </constraints>
     <properties>
       <background color="-770825"/>
@@ -27,7 +27,7 @@
             <properties>
               <font name="Comic Sans MS" size="48" style="3"/>
               <foreground color="-327695"/>
-              <text value="Secret Santa"/>
+              <text value="Secret Valentine"/>
             </properties>
           </component>
         </children>
@@ -52,7 +52,7 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="22dfc" class="javax.swing.JButton" binding="importButton">
+              <component id="22dfc" class="javax.swing.JButton" binding="deleteButton">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -60,7 +60,7 @@
                   <background color="-4449516"/>
                   <font name="Lucida Sans Typewriter" size="18" style="1"/>
                   <foreground color="-327695"/>
-                  <text value="Import"/>
+                  <text value="Delete"/>
                 </properties>
               </component>
               <hspacer id="9b75f">
@@ -73,7 +73,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="9037" class="javax.swing.JButton" binding="exitButton">
+              <component id="9037" class="javax.swing.JButton" binding="doneButton">
                 <constraints>
                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -81,7 +81,7 @@
                   <background color="-4449516"/>
                   <font name="Lucida Sans Typewriter" size="18" style="1"/>
                   <foreground color="-327695"/>
-                  <text value="  Exit  "/>
+                  <text value=" Done "/>
                 </properties>
               </component>
               <vspacer id="f66cd">
@@ -103,19 +103,6 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="9dfa6" class="javax.swing.JTextField" binding="importFileBox">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-4449516"/>
-              <font size="24" style="1"/>
-              <foreground color="-327695"/>
-              <text value="Enter a File Name ..."/>
-            </properties>
-          </component>
           <hspacer id="3a03b">
             <constraints>
               <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -133,7 +120,19 @@
             <properties>
               <font name="Lucida Sans Typewriter" size="20" style="1"/>
               <foreground color="-327695"/>
-              <text value="This will import a .txt file from your desktop"/>
+              <text value="Choose a person to delete from the list."/>
+            </properties>
+          </component>
+          <component id="6ee3a" class="javax.swing.JComboBox" binding="personList">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4449516"/>
+              <font size="24" style="1"/>
+              <foreground color="-327695"/>
             </properties>
           </component>
         </children>

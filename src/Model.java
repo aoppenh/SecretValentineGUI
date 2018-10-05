@@ -11,6 +11,7 @@ import java.util.*;
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments;
     static ArrayList<Person> people = new ArrayList<>();
+    static ArrayList<Person> tempPeople = new ArrayList<>();
     static int counter = 0;
     static int counterAdded;
     static boolean falseImportCheck = false;

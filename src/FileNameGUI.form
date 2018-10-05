@@ -27,7 +27,7 @@
             <properties>
               <font name="Comic Sans MS" size="48" style="3"/>
               <foreground color="-327695"/>
-              <text value="Secret Santa"/>
+              <text value="Secret Valentine"/>
             </properties>
           </component>
         </children>
