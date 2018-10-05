@@ -63,12 +63,6 @@ public class Model {
                 people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
                 counterAssign++;
                 i++;
-            } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getValen()) {
-                peopleAndAssignments.put(people.get(ran), people.get(i));
-                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getValen());
-                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
-                counterAssign++;
-                i++;
             }
         }
     }
