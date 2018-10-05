@@ -73,7 +73,7 @@ public class Model {
     }
 
     public static boolean checkCompatible(Person a, Person b) {
-        if (a.getPref() == Preference.HOMOSEXUAL || a.getPref() == Preference.LESBIAN) {
+        if (a.getPref() == Preference.GAY || a.getPref() == Preference.LESBIAN) {
             if (a == b) {
                 return true;
             } else {

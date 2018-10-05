@@ -56,7 +56,7 @@ public class AddPeopleGUI extends JFrame {
         });
         addPrefBox.addItem("Straight - Male");
         addPrefBox.addItem("Straight - Female");
-        addPrefBox.addItem("Homosexual");
+        addPrefBox.addItem("Gay");
         addPrefBox.addItem("Lesbian");
         addPrefBox.addItem("Bisexual");
         exitButton.addActionListener(new ActionListener() {
@@ -90,7 +90,7 @@ public class AddPeopleGUI extends JFrame {
                         tempP = Preference.STRAIGHT_FEMALE;
                         break;
                     case 2:
-                        tempP = Preference.HOMOSEXUAL;
+                        tempP = Preference.GAY;
                         break;
                     case 3:
                         tempP = Preference.LESBIAN;
