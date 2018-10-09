@@ -115,7 +115,7 @@ public class AddPeopleGUI extends JFrame {
                     dispose();
                     new RandomizedGUI("Secret Santa");
                 } else {
-                    new ErrorGUI("Secret Valentine", "Not enough people.");
+                    new ErrorGUI("Secret Valentine Error", "Not enough people.");
                 }
             }
         });
