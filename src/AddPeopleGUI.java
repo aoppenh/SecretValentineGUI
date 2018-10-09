@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 10/05/2018
+ * Version 10/09/2018
  */
 public class AddPeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -105,14 +105,18 @@ public class AddPeopleGUI extends JFrame {
         randomizeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int i = 0;
-                for (Person p : Model.tempPeople) {
-                    Model.people.add(p);
-                    i++;
+                if (Model.tempPeople.size() > 1) {
+                    int i = 0;
+                    for (Person p : Model.tempPeople) {
+                        Model.people.add(p);
+                        i++;
+                    }
+                    Model.setPeopleAndAssignments();
+                    dispose();
+                    new RandomizedGUI("Secret Santa");
+                } else {
+                    new ErrorGUI("Secret Valentine", "Not enough people.");
                 }
-                Model.setPeopleAndAssignments();
-                dispose();
-                new RandomizedGUI("Secret Santa");
             }
         });
         deletePersonButton.addActionListener(new ActionListener() {

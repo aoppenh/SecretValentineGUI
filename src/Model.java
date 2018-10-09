@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 10/05/2018
+ * Version 10/09/2018
  */
 public class Model {
     static Hashtable<Person, Person> peopleAndAssignments;
@@ -52,13 +52,19 @@ public class Model {
                 startTime = System.currentTimeMillis();
 //                System.out.println("TIMEOUT : RE-RANDOMIZING : " + newTime);
             }
-            if (newTime > 5000) {
-                i = 0;
-                for (Person p : people) {
-                    p.set(p.getName(), false, false, Preference.BISEXUAL);
-                }
-            }
+//            if (newTime > 5000) {
+//                i = 0;
+//                for (Person p : people) {
+//                    p.set(p.getName(), false, false, Preference.BISEXUAL);
+//                }
+//            }
             if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getValen() && checkCompatible(people.get(i), people.get(ran)) && newTime <= 5000) {
+                peopleAndAssignments.put(people.get(ran), people.get(i));
+                people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getValen());
+                people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
+                counterAssign++;
+                i++;
+            } else if (!(people.get(ran).equals(people.get(i))) && !people.get(ran).getAssigned() && !people.get(i).getValen() && newTime > 5000) {
                 peopleAndAssignments.put(people.get(ran), people.get(i));
                 people.get(ran).set(people.get(ran).getName(), true, people.get(ran).getValen());
                 people.get(i).set(people.get(i).getName(), people.get(i).getAssigned(), true);
