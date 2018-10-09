@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * Created by Andrew Oppenheimer on 12/25/2016.
- * Version 10/05/2018
+ * Version 10/09/2018
  */
 public class DeletePeopleGUI extends JFrame {
     private JPanel formPanel;
@@ -32,8 +32,27 @@ public class DeletePeopleGUI extends JFrame {
         deleteButton.setPreferredSize(new Dimension(140, 70));
         doneButton.setPreferredSize(new Dimension(140, 70));
 
+        String tempDisStr = "";
+
         for (Person p : Model.tempPeople) {
-            personList.addItem(p.getName());
+            switch(p.getPref()) {
+                case STRAIGHT_MALE:
+                    tempDisStr = "Straight, Male";
+                    break;
+                case STRAIGHT_FEMALE:
+                    tempDisStr = "Straight, Female";
+                    break;
+                case GAY:
+                    tempDisStr = "Gay";
+                    break;
+                case LESBIAN:
+                    tempDisStr = "Lesbian";
+                    break;
+                case BISEXUAL:
+                    tempDisStr = "Bisexual";
+                    break;
+            }
+            personList.addItem(p.getName() + " : " + tempDisStr);
         }
 
         doneButton.addActionListener(new ActionListener() {
